@@ -1,0 +1,101 @@
+body{
+    background-color: antiquewhite;
+    color: rgb(50, 62, 50);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav{
+    text-align: right;
+    font-size: 15px;
+}
+
+header{
+    font-style: oblique;
+    width: fit-content;
+    margin:auto;
+    border-bottom: 1px solid rgb(250, 208, 153);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+img{
+    width: 70px;
+    height: auto;
+    border-radius: 50%;
+}
+h1{
+    font-size: 50px;
+    font-weight: 200;
+    color: brown;
+}
+h2{
+    font-size: 30px;
+    font-weight: 100;
+    color: rgb(212, 137, 137);
+    margin: 10px;
+    text-align: center;
+}
+#about{
+    margin: 20px;
+    padding: 10px;
+}
+
+#experience{
+    margin: 20px;
+    padding: 10px;
+    text-align: left;
+    background-color: beige;
+    border: solid 1px rgba(255, 208, 0, 0.44);
+
+}
+
+.job-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.job-title{
+    font-size: 20px;
+
+}
+
+.job-date{
+    font-style: italic;
+
+}
+
+.job-desc{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgb(224, 143, 37);
+
+}
+#connect{
+    margin: 20px;
+    padding: 10px;
+    text-align: left;
+    background-color: beige;
+    border: solid 1px rgba(255, 208, 0, 0.44);
+
+}
+
+#skills{
+    margin: 20px;
+    padding: 10px;
+    text-align: left;
+    background-color: beige;
+    border: solid 1px rgba(255, 208, 0, 0.44);
+}
+
+#projects{
+    margin: 20px;
+    padding: 10px;
+    text-align: left;
+    background-color: beige;
+    border: solid 1px rgba(255, 208, 0, 0.44);
+}
