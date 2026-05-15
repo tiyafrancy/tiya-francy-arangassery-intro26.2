@@ -7,6 +7,9 @@ body{
 nav{
     text-align: right;
     font-size: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header{
