@@ -76,12 +76,41 @@ h2{
 
 }
 #connect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 20px;
     padding: 10px;
-    text-align: left;
     background-color: beige;
     border: solid 1px rgba(255, 208, 0, 0.44);
 
+}
+
+#connect ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#connect ul li{
+    width: auto;
+    margin-left: 20px;
+}
+
+#connect ul li a{
+    display: flex;
+    align-items: center;
+    text-decoration-style: wavy;
+    font-size: 20px;;
+    color: #333;
+}
+
+#connect ul li a:hover{
+    color: #c11818;
 }
 
 #skills{
