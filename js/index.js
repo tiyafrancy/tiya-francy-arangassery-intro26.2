@@ -10,13 +10,13 @@ const today = new Date();
 
 const thisYear = today.getFullYear();
 
-// const footer = document.querySelector("footer");
+const footerText = document.querySelector("footer");
 
 const copyright = document.createElement("p");
 
 copyright.innerHTML = `&copy; Tiya Francy Arangassery ${thisYear}`;
 
-footer.appendChild(copyright);
+footerText.appendChild(copyright);
 
 const skills = ["JavaScript", "HTML", "CSS", "Adobe Photoshop", "GitHub"];
 
