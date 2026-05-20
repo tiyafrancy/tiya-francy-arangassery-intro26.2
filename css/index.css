@@ -80,6 +80,18 @@ h2{
     border-bottom: 1px solid rgb(224, 143, 37);
 
 }
+
+#skills{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+    background-color: beige;
+    border: solid 1px rgba(255, 208, 0, 0.44);
+}
+
+
 #connect{
     display: flex;
     flex-direction: column;
@@ -116,14 +128,6 @@ h2{
 
 #connect ul li a:hover{
     color: #c11818;
-}
-
-#skills{
-    margin: 20px;
-    padding: 10px;
-    text-align: left;
-    background-color: beige;
-    border: solid 1px rgba(255, 208, 0, 0.44);
 }
 
 #projects{
