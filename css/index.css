@@ -10,6 +10,8 @@ nav{
     position: sticky;
     top: 0;
     z-index: 1000;
+    background-color: rgb(238, 210, 137);
+    padding: 15px 20px;
 }
 
 header{
