@@ -164,7 +164,7 @@ h2{
 }
 
 #connect ul li a:hover{
-    color: rgb(232, 53, 53);
+    color: brown;
 }
 
 #projects{
@@ -189,7 +189,7 @@ form[name="leave_message"]{
     max-width: 500px;
 }
 
-form[name="leave_message"]label{
+form[name="leave_message"] label{
     font-weight: bold;
     color: rgb(50, 62, 50);
     margin-bottom: 5px;
@@ -247,7 +247,7 @@ form[name="leave_message"] button:hover{
 }
 
 #messages ul li span{
-    dispaly: inline-block;
+    display: inline-block;
     margin-left: 5px;
 }
 
