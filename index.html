@@ -13,6 +13,7 @@
         <a href="#connect">connect</a>
         <a href="#skills">skills</a>
         <a href="#projects">projects</a>
+        <a href="#leave_message">Leave a Message</a>
     </nav>
 
     <header>
@@ -79,5 +80,21 @@
     </section>
     
     <script src="js/index.js"></script>
+
+    <section id="leave_message">
+        <h2>Leave a Message</h2>
+        <form name="leave_message">
+            <label for="name">Name:</label><br>
+            <input type="text" name="usersName" required="true"><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" name="usersEmail" required="true"><br>
+            
+            <label for="message">Message</label><br>
+            <textarea name="usersMessage" required="true"></textarea><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
 </body>
 </html>
