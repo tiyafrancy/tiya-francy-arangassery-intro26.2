@@ -2,6 +2,7 @@ body{
     background-color: antiquewhite;
     color: rgb(50, 62, 50);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
 }
 
 nav{
@@ -12,6 +13,18 @@ nav{
     z-index: 1000;
     background-color: rgb(238, 210, 137);
     padding: 15px 20px;
+}
+
+nav a{
+    color: rgb(50,62,50);
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+nav a:hover{
+    color: brown;
 }
 
 header{
@@ -85,10 +98,28 @@ h2{
     display: flex;
     flex-direction: column;
     text-align: left;
-    margin: 10px;
-    padding: 10px;
+    margin: 20px;
+    padding: 15px;
     background-color: beige;
     border: solid 1px rgba(255, 208, 0, 0.44);
+}
+
+#skills ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 5px 0;
+}
+
+#skills ul li{
+    background-color: antiquewhite;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+    border-left: 3px solid rgb(224, 143, 37);
+    font-weight: bold;
 }
 
 
@@ -105,29 +136,35 @@ h2{
 
 #connect ul{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     list-style: none;
-    align-items: flex-start;
     width: 100%;
     padding: 0;
-    margin: 0;
+    margin: 15px 0 5px 0;
 }
 
 #connect ul li{
+    display: flex;
+    align-items: center;
     width: auto;
-    margin-left: 20px;
+    margin: 0 15px;
+}
+
+#connect ul li i{
+    font-size: 24px;
+    color: rgb(50, 62, 50);
+    margin-right: 8px;
 }
 
 #connect ul li a{
-    display: flex;
-    align-items: center;
-    text-decoration-style: wavy;
+    text-decoration-style: double;
     font-size: 20px;;
-    color: #333;
+    color: rgb(50,62,50);
 }
 
 #connect ul li a:hover{
-    color: #c11818;
+    color: brown;
 }
 
 #projects{
@@ -136,4 +173,122 @@ h2{
     text-align: left;
     background-color: beige;
     border: solid 1px rgba(255, 208, 0, 0.44);
+}
+
+#leave_message{
+    margin: 20px;
+    padding: 15px;
+    text-align: left;
+    background-color: beige;
+    border: solid 1px rgba(255, 208, 0, 0.44);
+}
+
+form[name="leave_message"]{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form[name="leave_message"] .form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+form[name="leave_message"] label{
+    font-weight: bold;
+    color: rgb(50, 62, 50);
+    margin-bottom: 8px;
+}
+
+form[name="leave_message"] input,
+form[name="leave_message"] textarea{
+    padding: 12px;
+    font-size: 16px;
+    min-height: 44px;
+    width: 100%;
+    box-sizing: border-box;
+    border: solid 1px rgb(224, 143, 37);
+    border-radius: 4px;
+}
+
+form[name="leave_message"] textarea{
+    height: 120px;
+    resize: vertical;
+}
+
+form[name="leave_message"] button{
+    background-color: rgb(238, 210, 137);
+    color: brown;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    min-height: 44px;
+    width: 100%;
+    border: solid 1px rgb(224, 143, 37);
+    border-radius: 4px;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+form[name="leave_message"] button:hover{
+    background-color: brown;
+    color: antiquewhite;
+}
+
+@media (min-width: 600px){
+    form[name="leave_message"]{
+        max-width: 500px;
+    }
+
+    form[name="leave_message"] button{
+        width: auto;
+        align-self: flex-start;
+    }
+}
+
+#messages{
+    margin: 20px;
+    padding: 15px;
+    background-color: beige;
+    border: solid 1px rgba(255, 208, 0, 0.44);
+}
+
+#messages ul{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+#messages ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background-color: antiquewhite;
+    border-left: solid 4px brown;
+    margin-bottom: 10px;
+    padding: 12px 15px;
+}
+
+#messages ul li a{
+    color: brown;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#messages ul li span{
+    display: inline-block;
+    margin-left: 5px;
+}
+
+#messages ul li button{
+    background-color: rgb(245, 207, 207);
+    color: rgb(232, 53, 53);
+    border: solid 1px rgb(145, 69, 69);
+    padding: 4px 8px;
+    font-size: 14px;
+    cursor: pointer;
 }
