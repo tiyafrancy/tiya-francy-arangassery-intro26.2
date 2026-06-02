@@ -89,15 +89,21 @@
     <section id="leave_message">
         <h2>Leave a Message</h2>
         <form name="leave_message">
-            <label for="usersName">Name</label><br>
-            <input type="text" name="usersName" required="true"><br>
+            <div class="form-group">
+                <label for="usersName">Name</label>
+                <input type="text" id="usersName" name="usersName" required="true">
+            </div>
             
-            <label for="usersEmail">Email</label><br>
-            <input type="email" name="usersEmail" required="true"><br>
+            <div class="form-group">
+                <label for="usersEmail">Email</label>
+                <input type="email" id="usersEmail" name="usersEmail" required="true">
+            </div>
             
-            <label for="usersMessage">Message</label><br>
-            <textarea name="usersMessage" required="true"></textarea><br>
-
+            <div class="form-group">
+                <label for="usersMessage">Message</label>
+                <textarea id="usersMessage" name="usersMessage" required="true"></textarea>
+            </div>
+            
             <button type="submit">Submit</button>
         </form>
     </section>

@@ -186,17 +186,35 @@ h2{
 form[name="leave_message"]{
     display: flex;
     flex-direction: column;
-    max-width: 500px;
+    width: 100%;
+}
+
+form[name="leave_message"] .form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
 }
 
 form[name="leave_message"] label{
     font-weight: bold;
     color: rgb(50, 62, 50);
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+}
+
+form[name="leave_message"] input,
+form[name="leave_message"] textarea{
+    padding: 12px;
+    font-size: 16px;
+    min-height: 44px;
+    width: 100%;
+    box-sizing: border-box;
+    border: solid 1px rgb(224, 143, 37);
+    border-radius: 4px;
 }
 
 form[name="leave_message"] textarea{
-    height: 100px;
+    height: 120px;
+    resize: vertical;
 }
 
 form[name="leave_message"] button{
@@ -205,15 +223,30 @@ form[name="leave_message"] button{
     font-family: inherit;
     font-size: 16px;
     font-weight: bold;
-    padding: 10px 20px;
+    padding: 12px 24px;
+    min-height: 44px;
+    width: 100%;
     border: solid 1px rgb(224, 143, 37);
+    border-radius: 4px;
     cursor: pointer;
-    align-self: flex-start;
+    box-sizing: border-box;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 form[name="leave_message"] button:hover{
     background-color: brown;
     color: antiquewhite;
+}
+
+@media (min-width: 600px){
+    form[name="leave_message"]{
+        max-width: 500px;
+    }
+
+    form[name="leave_message"] button{
+        width: auto;
+        align-self: flex-start;
+    }
 }
 
 #messages{
