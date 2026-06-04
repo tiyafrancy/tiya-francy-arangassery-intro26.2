@@ -96,8 +96,8 @@ fetch("https://api.github.com/users/tiyafrancy/repos")
 
     const projectSection = document.getElementById("projects");
     const errorMessage = document.createElement("p");
-    errorMessage.textContent = "unable to load projects"
+    errorMessage.textContent = "Project section is empty"
     projectSection.appendChild(errorMessage);
-    
+
 });
 
