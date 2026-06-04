@@ -2,8 +2,6 @@ const body = document.querySelector("body");
 
 const footer = document.createElement("footer");
 
-// footer.textContent = "my webpage footer";
-
 body.appendChild(footer);
 
 const today = new Date();
@@ -71,7 +69,7 @@ messageForm.addEventListener("submit", function(event) {
 
 });
 
-fetch("https://api.github.com/users/tiyafrancy/repos")
+fetch("https://api.github.com/users/tiyafrany/repos")
 .then(response => {
     if(!response.ok){
         throw new Error(response.status);
@@ -96,7 +94,7 @@ fetch("https://api.github.com/users/tiyafrancy/repos")
 
     const projectSection = document.getElementById("projects");
     const errorMessage = document.createElement("p");
-    errorMessage.textContent = "Project section is empty"
+    errorMessage.textContent = "Project section is empty " + error.message;
     projectSection.appendChild(errorMessage);
 
 });
