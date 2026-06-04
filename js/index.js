@@ -92,6 +92,6 @@ fetch("https://api.github.com/users/tiyafrancy/repos")
     }
 })
 .catch(error => {
-    console.error(error);
+    console.error("Fetch api failed", error);
 });
 
