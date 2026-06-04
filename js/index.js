@@ -93,5 +93,11 @@ fetch("https://api.github.com/users/tiyafrancy/repos")
 })
 .catch(error => {
     console.error("Fetch api failed", error);
+
+    const projectSection = document.getElementById("projects");
+    const errorMessage = document.createElement("p");
+    errorMessage.textContent = "unable to load projects"
+    projectSection.appendChild(errorMessage);
+    
 });
 
