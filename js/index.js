@@ -69,7 +69,7 @@ messageForm.addEventListener("submit", function(event) {
 
 });
 
-fetch("https://api.github.com/users/tiyafrany/repos")
+fetch("https://api.github.com/users/tiyafrancy/repos")
 .then(response => {
     if(!response.ok){
         throw new Error(response.status);
