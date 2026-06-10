@@ -94,6 +94,7 @@ fetch("https://api.github.com/users/tiyafrancy/repos")
 
     const projectSection = document.getElementById("projects");
     const errorMessage = document.createElement("p");
+    errorMessage.classList.add("error-message");
     errorMessage.textContent = "Project section is empty " + error.message;
     projectSection.appendChild(errorMessage);
 
