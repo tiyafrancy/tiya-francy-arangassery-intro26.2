@@ -104,6 +104,9 @@ async function fetchCondition(lat, log, cityName, country){
 }
 
 tempButton.addEventListener("click", async () => {
+    tempResult.innerHTML = "";
+    conditionResult.innerHTML = "";
+
     const city = cityInput.value.trim();
 
     if(!city){
@@ -112,14 +115,23 @@ tempButton.addEventListener("click", async () => {
     }
 
     try{
+        tempButton.disabled = true;
+        weatherConditionButton.disabled = true;
+        
         const coords = await getCoordinates(city);
         await fetchTemperature(coords.lat, coords.log, coords.name, coords.country);
     }catch(error){
         tempResult.innerHTML = `${error.message}`;
+    }finally{
+        tempButton.disabled = false;
+        weatherConditionButton.disabled = false;
     }
 });
 
 weatherConditionButton.addEventListener("click", async () => {
+    tempResult.innerHTML = "";
+    conditionResult.innerHTML = "";
+
     const city = cityInput.value.trim();
 
     if(!city){
@@ -128,10 +140,16 @@ weatherConditionButton.addEventListener("click", async () => {
     }
 
     try{
+        tempButton.disabled = true;
+        weatherConditionButton.disabled = true;
+
         const coords = await getCoordinates(city);
         await fetchCondition(coords.lat, coords.log, coords.name, coords.country);
     }catch(error){
         conditionResult.innerHTML = `${error.message}`;
+    }finally{
+        tempButton.disabled = false;
+        weatherConditionButton.disabled = false;
     }
 });
 

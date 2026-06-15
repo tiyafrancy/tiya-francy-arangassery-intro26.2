@@ -7,42 +7,41 @@
     <link href="css/weather.css" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home Page</a>
-    </nav>
+    <main>
+        <nav>
+            <a href="index.html">Home Page</a>
+        </nav>
 
-    <header>
-        <img src="images/weather_app_icon.jpg" alt="weather app icon">
-        <h1>Enter a City to fetch Weather Data</h1>
-    </header>
+        <header>
+            <img src="images/weather_app_icon.jpg" alt="weather app icon">
+            <h1>Enter a City to fetch Weather Data</h1>
+        </header>
 
-    <section id="weather_data">
+        <section id="weather_data">
 
-        <div class="search_box">
-            <label>Enter City:</label>
-            <input type="text" id="cityInput" placeholder="e.g., Miami, Tokyo..." required="true">
-        </div>
-
-        <div class="button">
-            <button id="tempButton" class="button_class">Current Temperature</button>
-            <button id="weatherConditionButton" class="button_class">Weather Condition</button>
-        </div>
-
-        <div class="fetch_results">
-            <div id="tempResult">
-                <!-- <h3>Temperature</h3> -->
-                <p class="temp"></p>
+            <div class="search_box">
+                <label>Enter City:</label>
+                <input type="text" id="cityInput" placeholder="e.g., Miami, Tokyo..." required="true">
             </div>
 
-            <div id="conditionResult">
-                <!-- <h3>Condition</h3> -->
-                <p class="condition"></p>
+            <div class="button">
+                <button id="tempButton" class="button_class">Current Temperature</button>
+                <button id="weatherConditionButton" class="button_class">Weather Condition</button>
             </div>
-        </div>
 
-    </section>
+            <div class="fetch_results">
+                <div id="tempResult">
+                    <p class="temp"></p>
+                </div>
 
-    <script src="js/weather.js"></script>
-    
+                <div id="conditionResult">
+                    <p class="condition"></p>
+                </div>
+            </div>
+
+        </section>
+
+        <script src="js/weather.js"></script>
+    </main>
 </body>
 </html>

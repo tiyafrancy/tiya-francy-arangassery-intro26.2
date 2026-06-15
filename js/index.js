@@ -16,7 +16,7 @@ copyright.innerHTML = `&copy; Tiya Francy Arangassery ${thisYear}`;
 
 footerText.appendChild(copyright);
 
-const skills = ["JavaScript", "HTML", "CSS", "Adobe Photoshop", "GitHub"];
+const skills = ["JavaScript", "HTML", "CSS", "VS Code", "GitHub"];
 
 const skillsSection = document.getElementById("skills");
 
