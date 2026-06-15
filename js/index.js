@@ -16,7 +16,7 @@ copyright.innerHTML = `&copy; Tiya Francy Arangassery ${thisYear}`;
 
 footerText.appendChild(copyright);
 
-const skills = ["JavaScript", "HTML", "CSS", "Adobe Photoshop", "GitHub"];
+const skills = ["JavaScript", "HTML", "CSS", "VS Code", "GitHub"];
 
 const skillsSection = document.getElementById("skills");
 
@@ -94,6 +94,7 @@ fetch("https://api.github.com/users/tiyafrancy/repos")
 
     const projectSection = document.getElementById("projects");
     const errorMessage = document.createElement("p");
+    errorMessage.classList.add("error-message");
     errorMessage.textContent = "Project section is empty " + error.message;
     projectSection.appendChild(errorMessage);
 

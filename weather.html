@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Data</title>
+    <link href="css/weather.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <nav>
+            <a href="index.html">Home Page</a>
+        </nav>
+
+        <header>
+            <img src="images/weather_app_icon.jpg" alt="weather app icon">
+            <h1>Enter a City to fetch Weather Data</h1>
+        </header>
+
+        <section id="weather_data">
+
+            <div class="search_box">
+                <label>Enter City:</label>
+                <input type="text" id="cityInput" placeholder="e.g., Miami, Tokyo..." required="true">
+            </div>
+
+            <div class="button">
+                <button id="tempButton" class="button_class">Current Temperature</button>
+                <button id="weatherConditionButton" class="button_class">Weather Condition</button>
+            </div>
+
+            <div class="fetch_results">
+                <div id="tempResult">
+                    <p class="temp"></p>
+                </div>
+
+                <div id="conditionResult">
+                    <p class="condition"></p>
+                </div>
+            </div>
+
+        </section>
+
+        <script src="js/weather.js"></script>
+    </main>
+</body>
+</html>

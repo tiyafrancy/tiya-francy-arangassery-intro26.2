@@ -162,7 +162,7 @@ h2{
 
 #connect ul li a{
     text-decoration-style: double;
-    font-size: 20px;;
+    font-size: 20px;
     color: rgb(50,62,50);
 }
 
@@ -204,6 +204,9 @@ h2{
     text-align: left;
     background-color: beige;
     border: solid 1px rgba(255, 208, 0, 0.44);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 form[name="leave_message"]{
@@ -267,7 +270,7 @@ form[name="leave_message"] button:hover{
 
     form[name="leave_message"] button{
         width: auto;
-        align-self: flex-start;
+        align-self: center;
     }
 }
 
@@ -319,7 +322,7 @@ form[name="leave_message"] button:hover{
     background-color: rgb(245, 207, 207);
     color: brown;
     border: solid 1px rgb(145, 69, 69);
-    padding: 12 px;
+    padding: 12px;
     border-radius: 4px;
     text-align: center;
     font-weight: bold;
